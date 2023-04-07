@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +52,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auteurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auteurs.Designer.cs">
+      <DependentUpon>Auteurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catégories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catégories.Designer.cs">
+      <DependentUpon>Catégories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturation.Designer.cs">
+      <DependentUpon>Facturation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livres.Designer.cs">
+      <DependentUpon>Livres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +84,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vendeurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendeurs.Designer.cs">
+      <DependentUpon>Vendeurs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Auteurs.resx">
+      <DependentUpon>Auteurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catégories.resx">
+      <DependentUpon>Catégories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturation.resx">
+      <DependentUpon>Facturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livres.resx">
+      <DependentUpon>Livres.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +114,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vendeurs.resx">
+      <DependentUpon>Vendeurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
