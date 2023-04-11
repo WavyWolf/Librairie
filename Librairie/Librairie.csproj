@@ -76,6 +76,7 @@
     <Compile Include="Connexion.Designer.cs">
       <DependentUpon>Connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fonctions.cs" />
     <Compile Include="Livres.cs">
       <SubType>Form</SubType>
     </Compile>
