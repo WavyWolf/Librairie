@@ -16,7 +16,7 @@ namespace Librairie
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Livres());
+            Application.Run(new Menu());
         }
     }
 }
