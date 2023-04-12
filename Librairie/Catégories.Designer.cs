@@ -29,10 +29,12 @@ namespace Librairie
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Catégories));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.SupprimerBtn = new System.Windows.Forms.Button();
+            this.EnregistrerBtn = new System.Windows.Forms.Button();
+            this.ModifierBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,12 +49,13 @@ namespace Librairie
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.DescTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.CatNomTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ListeCategories = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -61,54 +64,47 @@ namespace Librairie
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ListeCategories)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // SupprimerBtn
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(324, 572);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1433, 710);
-            this.dataGridView1.TabIndex = 47;
+            this.SupprimerBtn.Location = new System.Drawing.Point(1107, 376);
+            this.SupprimerBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SupprimerBtn.Name = "SupprimerBtn";
+            this.SupprimerBtn.Size = new System.Drawing.Size(193, 65);
+            this.SupprimerBtn.TabIndex = 46;
+            this.SupprimerBtn.Text = "Supprimer";
+            this.SupprimerBtn.UseVisualStyleBackColor = true;
+            this.SupprimerBtn.Click += new System.EventHandler(this.SupprimerBtn_Click);
             // 
-            // button3
+            // EnregistrerBtn
             // 
-            this.button3.Location = new System.Drawing.Point(1219, 375);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 65);
-            this.button3.TabIndex = 46;
-            this.button3.Text = "Supprimer";
-            this.button3.UseVisualStyleBackColor = true;
+            this.EnregistrerBtn.Location = new System.Drawing.Point(807, 376);
+            this.EnregistrerBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.EnregistrerBtn.Name = "EnregistrerBtn";
+            this.EnregistrerBtn.Size = new System.Drawing.Size(209, 65);
+            this.EnregistrerBtn.TabIndex = 45;
+            this.EnregistrerBtn.Text = "Enregistrer";
+            this.EnregistrerBtn.UseVisualStyleBackColor = true;
+            this.EnregistrerBtn.Click += new System.EventHandler(this.EnregistrerBtn_Click);
             // 
-            // button2
+            // ModifierBtn
             // 
-            this.button2.Location = new System.Drawing.Point(919, 375);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(209, 65);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "Enregistrer";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(611, 375);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 65);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Modifier";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ModifierBtn.Location = new System.Drawing.Point(499, 376);
+            this.ModifierBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ModifierBtn.Name = "ModifierBtn";
+            this.ModifierBtn.Size = new System.Drawing.Size(185, 65);
+            this.ModifierBtn.TabIndex = 44;
+            this.ModifierBtn.Text = "Modifier";
+            this.ModifierBtn.UseVisualStyleBackColor = true;
+            this.ModifierBtn.Click += new System.EventHandler(this.ModifierBtn_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Location = new System.Drawing.Point(1213, 94);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(133, 6);
             this.panel2.TabIndex = 35;
@@ -183,7 +179,7 @@ namespace Librairie
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(-3, 1062);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(127, 66);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -193,21 +189,22 @@ namespace Librairie
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 222);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox6.Location = new System.Drawing.Point(5, 129);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(117, 66);
+            this.pictureBox6.Size = new System.Drawing.Size(69, 66);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 783);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox5.Location = new System.Drawing.Point(5, 579);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(117, 66);
+            this.pictureBox5.Size = new System.Drawing.Size(69, 66);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
@@ -215,10 +212,10 @@ namespace Librairie
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 641);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox4.Location = new System.Drawing.Point(5, 468);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(117, 66);
+            this.pictureBox4.Size = new System.Drawing.Size(69, 66);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
@@ -226,10 +223,10 @@ namespace Librairie
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 497);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(5, 348);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(117, 66);
+            this.pictureBox3.Size = new System.Drawing.Size(69, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -237,57 +234,58 @@ namespace Librairie
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 359);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(5, 235);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 66);
+            this.pictureBox2.Size = new System.Drawing.Size(69, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 74);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 32);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(69, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox4
+            // DescTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(1067, 228);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(260, 22);
-            this.textBox4.TabIndex = 43;
+            this.DescTb.Location = new System.Drawing.Point(981, 292);
+            this.DescTb.Margin = new System.Windows.Forms.Padding(4);
+            this.DescTb.Name = "DescTb";
+            this.DescTb.Size = new System.Drawing.Size(260, 22);
+            this.DescTb.TabIndex = 43;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1060, 194);
+            this.label10.Location = new System.Drawing.Point(974, 258);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(135, 29);
             this.label10.TabIndex = 42;
             this.label10.Text = "Description";
             // 
-            // textBox3
+            // CatNomTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(727, 228);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(260, 22);
-            this.textBox3.TabIndex = 41;
+            this.CatNomTb.Location = new System.Drawing.Point(641, 292);
+            this.CatNomTb.Margin = new System.Windows.Forms.Padding(4);
+            this.CatNomTb.Name = "CatNomTb";
+            this.CatNomTb.Size = new System.Drawing.Size(260, 22);
+            this.CatNomTb.TabIndex = 41;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(721, 194);
+            this.label9.Location = new System.Drawing.Point(635, 258);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(246, 29);
@@ -299,27 +297,94 @@ namespace Librairie
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(49, 151);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Location = new System.Drawing.Point(30, 258);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(127, 1138);
+            this.panel1.Size = new System.Drawing.Size(91, 699);
             this.panel1.TabIndex = 28;
+            // 
+            // ListeCategories
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.ListeCategories.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.ListeCategories.BackgroundColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ListeCategories.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.ListeCategories.ColumnHeadersHeight = 4;
+            this.ListeCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ListeCategories.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ListeCategories.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ListeCategories.Location = new System.Drawing.Point(308, 512);
+            this.ListeCategories.Name = "ListeCategories";
+            this.ListeCategories.RowHeadersVisible = false;
+            this.ListeCategories.RowHeadersWidth = 51;
+            this.ListeCategories.RowTemplate.Height = 24;
+            this.ListeCategories.Size = new System.Drawing.Size(1218, 445);
+            this.ListeCategories.TabIndex = 49;
+            this.ListeCategories.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.ListeCategories.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.ListeCategories.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.ListeCategories.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.ListeCategories.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.ListeCategories.ThemeStyle.BackColor = System.Drawing.Color.DarkGray;
+            this.ListeCategories.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ListeCategories.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ListeCategories.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.ListeCategories.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListeCategories.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.ListeCategories.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.ListeCategories.ThemeStyle.HeaderStyle.Height = 4;
+            this.ListeCategories.ThemeStyle.ReadOnly = false;
+            this.ListeCategories.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.ListeCategories.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ListeCategories.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListeCategories.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ListeCategories.ThemeStyle.RowsStyle.Height = 24;
+            this.ListeCategories.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ListeCategories.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ListeCategories.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListeCategories_CellContentClick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(790, 480);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(237, 29);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Liste Des Catégories";
             // 
             // Catégories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.ListeCategories);
+            this.Controls.Add(this.SupprimerBtn);
+            this.Controls.Add(this.EnregistrerBtn);
+            this.Controls.Add(this.ModifierBtn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -327,16 +392,15 @@ namespace Librairie
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.DescTb);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.CatNomTb);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Catégories";
             this.Text = "Catégories";
             this.Load += new System.EventHandler(this.Catégories_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -345,17 +409,16 @@ namespace Librairie
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ListeCategories)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SupprimerBtn;
+        private System.Windows.Forms.Button EnregistrerBtn;
+        private System.Windows.Forms.Button ModifierBtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -370,10 +433,12 @@ namespace Librairie
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox DescTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox CatNomTb;
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2DataGridView ListeCategories;
+        private System.Windows.Forms.Label label7;
     }
 }

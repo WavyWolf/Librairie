@@ -29,9 +29,9 @@ namespace Librairie
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Auteurs));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SupprimerBtn = new System.Windows.Forms.Button();
             this.EnregistrerBtn = new System.Windows.Forms.Button();
             this.ModifierBtn = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@ namespace Librairie
             // SupprimerBtn
             // 
             this.SupprimerBtn.Location = new System.Drawing.Point(1195, 375);
-            this.SupprimerBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SupprimerBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SupprimerBtn.Name = "SupprimerBtn";
             this.SupprimerBtn.Size = new System.Drawing.Size(193, 65);
             this.SupprimerBtn.TabIndex = 44;
@@ -83,7 +83,7 @@ namespace Librairie
             // EnregistrerBtn
             // 
             this.EnregistrerBtn.Location = new System.Drawing.Point(895, 375);
-            this.EnregistrerBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EnregistrerBtn.Margin = new System.Windows.Forms.Padding(4);
             this.EnregistrerBtn.Name = "EnregistrerBtn";
             this.EnregistrerBtn.Size = new System.Drawing.Size(209, 65);
             this.EnregistrerBtn.TabIndex = 43;
@@ -94,7 +94,7 @@ namespace Librairie
             // ModifierBtn
             // 
             this.ModifierBtn.Location = new System.Drawing.Point(587, 375);
-            this.ModifierBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ModifierBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ModifierBtn.Name = "ModifierBtn";
             this.ModifierBtn.Size = new System.Drawing.Size(185, 65);
             this.ModifierBtn.TabIndex = 42;
@@ -105,7 +105,7 @@ namespace Librairie
             // PaysTb
             // 
             this.PaysTb.Location = new System.Drawing.Point(1336, 242);
-            this.PaysTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaysTb.Margin = new System.Windows.Forms.Padding(4);
             this.PaysTb.Name = "PaysTb";
             this.PaysTb.Size = new System.Drawing.Size(260, 22);
             this.PaysTb.TabIndex = 39;
@@ -135,7 +135,7 @@ namespace Librairie
             // AutNomTb
             // 
             this.AutNomTb.Location = new System.Drawing.Point(393, 242);
-            this.AutNomTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AutNomTb.Margin = new System.Windows.Forms.Padding(4);
             this.AutNomTb.Name = "AutNomTb";
             this.AutNomTb.Size = new System.Drawing.Size(260, 22);
             this.AutNomTb.TabIndex = 35;
@@ -156,7 +156,7 @@ namespace Librairie
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Location = new System.Drawing.Point(753, 94);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(133, 6);
             this.panel2.TabIndex = 33;
@@ -231,7 +231,7 @@ namespace Librairie
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(-3, 1062);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(127, 66);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -242,7 +242,7 @@ namespace Librairie
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(0, 222);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(117, 66);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -253,7 +253,7 @@ namespace Librairie
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(0, 783);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(117, 66);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -264,7 +264,7 @@ namespace Librairie
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(0, 641);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(117, 66);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -275,7 +275,7 @@ namespace Librairie
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 497);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(117, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -286,7 +286,7 @@ namespace Librairie
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 359);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(117, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -297,7 +297,7 @@ namespace Librairie
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 74);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -316,7 +316,7 @@ namespace Librairie
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(53, 151);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(127, 1138);
             this.panel1.TabIndex = 26;
@@ -328,7 +328,7 @@ namespace Librairie
             "Féminin",
             "Masculin"});
             this.GenCb.Location = new System.Drawing.Point(863, 242);
-            this.GenCb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GenCb.Margin = new System.Windows.Forms.Padding(4);
             this.GenCb.Name = "GenCb";
             this.GenCb.Size = new System.Drawing.Size(260, 24);
             this.GenCb.TabIndex = 46;
@@ -347,26 +347,27 @@ namespace Librairie
             // 
             // ListeAuteurs
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.ListeAuteurs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ListeAuteurs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ListeAuteurs.BackgroundColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ListeAuteurs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.ListeAuteurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ListeAuteurs.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ListeAuteurs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.ListeAuteurs.ColumnHeadersHeight = 4;
+            this.ListeAuteurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ListeAuteurs.DefaultCellStyle = dataGridViewCellStyle3;
             this.ListeAuteurs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ListeAuteurs.Location = new System.Drawing.Point(393, 536);
             this.ListeAuteurs.Name = "ListeAuteurs";
@@ -386,7 +387,7 @@ namespace Librairie
             this.ListeAuteurs.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.ListeAuteurs.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListeAuteurs.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.ListeAuteurs.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListeAuteurs.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.ListeAuteurs.ThemeStyle.HeaderStyle.Height = 4;
             this.ListeAuteurs.ThemeStyle.ReadOnly = false;
             this.ListeAuteurs.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -402,7 +403,7 @@ namespace Librairie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.ListeAuteurs);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.GenCb);
@@ -422,7 +423,7 @@ namespace Librairie
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Auteurs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
